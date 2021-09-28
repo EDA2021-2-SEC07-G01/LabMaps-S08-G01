@@ -25,7 +25,7 @@ import sys
 import controller
 from DISClib.ADT import list as lt
 assert cf
-
+import ipdb
 
 """
 La vista se encarga de la interacción con el usuario
@@ -143,7 +143,8 @@ while True:
         print('Géneros cargados: ' + str(controller.tagsSize(cont)))
 
     elif int(inputs[0]) == 3:
-        number = input("Buscando libros del año?: ")
+        number = input("Buscando libros del año: ")
+        ipdb.set_trace()
         books = controller.getBooksYear(cont, int(number))
         printBooksbyYear(books)
 
