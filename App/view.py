@@ -144,7 +144,7 @@ while True:
 
     elif int(inputs[0]) == 3:
         number = input("Buscando libros del año: ")
-        ipdb.set_trace()
+        #ipdb.set_trace()
         books = controller.getBooksYear(cont, int(number))
         printBooksbyYear(books)
 
